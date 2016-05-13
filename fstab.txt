@@ -1,0 +1,16 @@
+﻿# /etc/fstab
+# Created by anaconda on Thu Apr 21 19:16:03 2016
+#
+# Accessible filesystems, by reference, are maintained under '/dev/disk'
+# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info
+#
+/dev/mapper/centos-root /                       ext4     defaults,usrquota        1 2
+UUID=c49ae550-0403-42e7-837c-82fd2d59309f /boot                   xfs     defaults        1 2
+/dev/mapper/centos-swap swap                    swap    defaults       0 0
+
+
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                          

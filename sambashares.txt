@@ -1,0 +1,93 @@
+# Global parameters
+[global]
+	netbios name = MYSERVER
+	server string = Samba Server Version %v
+	interfaces = lo eth0 192.168.12.2/24 192.168.13.2/24
+	security = USER
+	log file = /var/log/samba/log.%m
+	max log size = 50
+	name resolve order = bcast host
+	idmap config * : backend = tdb
+	hosts allow = 127.192.168.12. 192.168.13.
+	cups options = raw
+
+
+[homes]
+	comment = Home Directories
+	read only = No
+	browseable = No
+
+
+[public]
+	comment = Public Stuff
+	path = /home
+	write list = manvi
+	read only = No
+	guest ok = Yes
+
+
+[teacher1]
+	comment = %U home directory
+	path = %H
+	valid users = teacher1
+	read only = No
+
+
+[teacher2]
+	comment = %U home directory
+	path = %H
+	valid users = teacher2
+	read only = No
+
+
+[teacher3]
+	comment = %U home directory
+	path = %H
+	valid users = teacher3
+	read only = No
+
+
+[student1]
+	comment = %U home directory
+	path = %H
+	valid users = student1
+	read only = No
+
+
+[student2]
+	comment = %U home directory
+	path = %H
+	valid users = student2
+	read only = No
+
+
+[student3]
+	comment = %U home directory
+	path = %H
+	valid users = student3
+	read only = No
+
+
+[manvi]
+	comment = %U home directory
+	path = %H
+	valid users = manvi
+	read only = No
+
+
+[students]
+	comment = Students Directory
+	path = /home/students
+	valid users = @students
+	read only = No
+	create mask = 0660
+	directory mask = 0770
+
+
+[teachers]
+	comment = Teachers Directory
+	path = /home/teachers
+	valid users = @teachers
+	read only = No
+	create mask = 0660
+	directory mask = 0770

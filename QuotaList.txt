@@ -1,0 +1,34 @@
+*** Report for user quotas on device /dev/mapper/centos-root
+Block grace time: 7days; Inode grace time: 7days
+                        Block limits                File limits
+User            used    soft    hard  grace    used  soft  hard  grace
+----------------------------------------------------------------------
+root      -- 3902284       0       0         117506     0     0       
+daemon    --       0       0       0              3     0     0       
+lp        --       0       0       0              1     0     0       
+polkitd   --       4       0       0              2     0     0       
+abrt      --      16       0       0              4     0     0       
+unbound   --       4       0       0              2     0     0       
+tss       --       8       0       0              2     0     0       
+rpc       --       0       0       0              2     0     0       
+colord    --      12       0       0              4     0     0       
+geoclue   --       0       0       0              1     0     0       
+chrony    --       4       0       0              3     0     0       
+rpcuser   --       0       0       0              4     0     0       
+setroubleshoot --       0       0       0              1     0     0       
+qemu      --       0       0       0              8     0     0       
+pulse     --       0       0       0              1     0     0       
+gdm       --      96       0       0             34     0     0       
+postfix   --       8       0       0             38     0     0       
+ntp       --       0       0       0              2     0     0       
+manvi     --   30412       0       0            490     0     0       
+teacher1  ++      24       4       4  6days      15     1     1  6days
+teacher2  +-      12       4       4  6days       8     0     0       
+teacher3  ++      12       4       4  6days       8     3     4  6days
+student1  --       0       4       4              1     6     8       
+student2  ++      12       4       8  6days       8     4     5  6days
+student3  +-      12       4       4  6days       8     0     0       
+nagios    --     108       0       0             15     0     0       
+apache    --       0       0       0              3     0     0       
+
+
